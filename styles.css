@@ -135,6 +135,7 @@ img {
   justify-content: space-between;
   align-items: center;
   font-weight: var(--font-semi);
+  
 }
 @media screen and (max-width: 767px) {
   .nav__menu {
@@ -144,7 +145,7 @@ img {
     width: 80%;
     height: 100%;
     padding: 2rem;
-    background-color: black;
+    background-color: black !important;
     transition: 0.5s;
   }
 }
@@ -155,10 +156,12 @@ img {
 }
 .nav__link {
   position: relative;
-  color: white;
+  color: white !important;
+  text-decoration: none;
 }
 .nav__link:hover {
   position: relative;
+  color: var(--first-color) !important;
 }
 .nav__link:hover::after {
   position: absolute;
@@ -173,7 +176,7 @@ img {
   color: var(--first-color);
 }
 .nav__toggle {
-  color: white;
+  color: var(--first-color);
   font-size: 1.5rem;
   cursor: pointer;
 }
